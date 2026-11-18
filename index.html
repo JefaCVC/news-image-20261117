@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World — Tuesday 17 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; }
+  body {
+    background: #f6f1e2;
+    color: #1c1a16;
+    font-family: "Noto Serif", Georgia, serif;
+    padding: 20px 22px 16px 22px;
+  }
+  .rule-double { border-top: 3px solid #1c1a16; border-bottom: 1px solid #1c1a16; height: 5px; }
+  .rule-single { border-top: 1px solid #1c1a16; height: 1px; }
+
+  /* ---------- masthead ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: "Noto Serif Display", "Noto Serif", Georgia, serif;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.02;
+    letter-spacing: -1px;
+  }
+  .date {
+    color: #a81e1e;
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    letter-spacing: 4px;
+    margin: 6px 0 3px 0;
+  }
+  .tagline {
+    font-style: italic;
+    font-size: 13px;
+    color: #5a5344;
+    margin-bottom: 8px;
+  }
+
+  /* ---------- map ---------- */
+  .mapblock { margin-top: 10px; }
+  .maplabel {
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1c1a16;
+    margin-bottom: 4px;
+  }
+  .maplabel span { color: #a81e1e; }
+  .mapwrap { border: 1px solid #b8ad8d; background: #dce8ef; }
+  .mapwrap svg { display: block; width: 980px; height: 153px; }
+
+  /* ---------- story cards ---------- */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .card {
+    background: #fffdf4;
+    border: 1px solid #d5cdb2;
+    height: 192px;
+    padding: 9px 11px 8px 11px;
+    overflow: hidden;
+  }
+  .card svg.art { display: block; width: 100%; height: 60px; }
+  .kick {
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #6b6350;
+    margin: 6px 0 3px 0;
+  }
+  .kick .n {
+    display: inline-block;
+    background: #a81e1e;
+    color: #fff;
+    width: 15px; height: 15px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 10px;
+    margin-right: 5px;
+    vertical-align: 1px;
+  }
+  .card h2 {
+    font-family: "Noto Serif Display", "Noto Serif", Georgia, serif;
+    font-weight: 800;
+    font-size: 15.5px;
+    line-height: 1.18;
+    letter-spacing: -0.2px;
+  }
+  .card p {
+    font-size: 11px;
+    line-height: 1.32;
+    color: #33302a;
+    margin-top: 4px;
+  }
+
+  /* ---------- also list ---------- */
+  .also { margin-top: 11px; }
+  .also-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  .also-head h3 {
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    white-space: nowrap;
+  }
+  .also-head .fill { flex: 1; border-top: 1px solid #1c1a16; height: 1px; }
+  .also-head .count {
+    font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #a81e1e;
+    white-space: nowrap;
+  }
+  .cols { display: flex; gap: 28px; }
+  .col { flex: 1; }
+  .item {
+    display: flex;
+    gap: 7px;
+    align-items: flex-start;
+    font-size: 11.5px;
+    line-height: 1.28;
+    padding: 2.5px 0;
+  }
+  .item .sq {
+    flex: none;
+    width: 6px; height: 6px;
+    background: #a81e1e;
+    margin-top: 4px;
+  }
+
+  /* ---------- footer ---------- */
+  .footer {
+    margin-top: 10px;
+    padding-top: 7px;
+    border-top: 3px double #1c1a16;
+    text-align: center;
+    font-size: 10.5px;
+    color: #4c4636;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <h1>THE WORLD</h1>
+  <div class="date">TUESDAY 17 NOVEMBER 2026</div>
+  <div class="tagline">The whole day, on one page</div>
+  <div class="rule-double"></div>
+</div>
+
+<div class="mapblock">
+  <div class="maplabel">WHERE THE DAY HAPPENED: <span>SIX STORIES, PINNED</span></div>
+  <div class="mapwrap">
+    <svg viewBox="0 0 960 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylised world map with six numbered pins">
+      <rect x="0" y="0" width="960" height="150" fill="#dce8ef"/>
+      <g stroke="#c2d2dc" stroke-width="0.7">
+        <line x1="0" y1="30" x2="960" y2="30"/><line x1="0" y1="60" x2="960" y2="60"/>
+        <line x1="0" y1="90" x2="960" y2="90"/><line x1="0" y1="120" x2="960" y2="120"/>
+        <line x1="160" y1="0" x2="160" y2="150"/><line x1="320" y1="0" x2="320" y2="150"/>
+        <line x1="480" y1="0" x2="480" y2="150"/><line x1="640" y1="0" x2="640" y2="150"/>
+        <line x1="800" y1="0" x2="800" y2="150"/>
+      </g>
+      <g fill="#d9d0b2" stroke="#a89f83" stroke-width="0.8" stroke-linejoin="round">
+        <path d="M32,24 L107,20 L187,22 L253,21 L320,30 L333,38 L307,45 L280,55 L267,58 L264,65 L256,60 L240,69 L221,74 L235,75 L251,78 L269,81 L235,72 L200,70 L187,66 L168,57 L149,50 L149,42 L120,32 L67,32 L40,30 Z"/>
+        <path d="M360,30 L400,22 L427,20 L413,14 L360,14 L325,26 Z"/>
+        <path d="M269,81 L280,80 L320,85 L347,90 L387,98 L379,105 L373,112 L352,118 L328,128 L315,131 L293,140 L299,145 L285,135 L285,127 L293,120 L293,108 L280,105 L264,96 L267,89 L275,86 Z"/>
+        <path d="M453,54 L456,47 L475,42 L480,39 L493,32 L507,32 L528,34 L536,35 L555,31 L560,20 L587,22 L565,30 L555,35 L544,45 L555,49 L541,50 L531,48 L512,46 L501,46 L488,47 L475,53 L456,53 Z"/>
+        <path d="M467,40 L472,37 L467,32 L475,33 L483,38 L480,39 Z"/>
+        <path d="M435,75 L453,59 L480,54 L507,53 L533,58 L565,59 L573,62 L595,78 L616,78 L616,88 L587,93 L587,105 L573,110 L568,116 L555,123 L533,125 L525,119 L520,112 L515,102 L504,86 L459,86 L445,82 Z"/>
+        <path d="M560,20 L587,22 L640,21 L693,18 L747,14 L800,17 L853,18 L907,20 L960,24 L955,25 L933,30 L912,34 L901,38 L859,40 L853,50 L840,55 L819,50 L805,52 L805,60 L800,65 L773,70 L760,80 L755,89 L747,83 L741,78 L733,74 L725,68 L715,68 L693,75 L685,82 L675,70 L661,67 L643,65 L632,63 L619,64 L613,61 L608,60 L597,61 L592,55 L587,54 L576,54 L560,54 L555,49 L544,45 L555,35 L560,30 Z"/>
+        <path d="M826,60 Q845,50 864,44 Q858,52 840,58 Q830,62 826,60 Z"/>
+        <ellipse cx="733" cy="92" rx="10" ry="4"/>
+        <ellipse cx="760" cy="95" rx="12" ry="4"/>
+        <ellipse cx="790" cy="94" rx="10" ry="4"/>
+        <ellipse cx="820" cy="91" rx="8" ry="3.5"/>
+        <path d="M781,112 L805,104 L832,102 L859,101 L880,112 L888,117 L880,127 L853,128 L832,122 L811,123 L787,124 L781,116 Z"/>
+        <ellipse cx="935" cy="133" rx="7" ry="4" transform="rotate(-45 935 133)"/>
+      </g>
+      <g font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="10" font-weight="700" text-anchor="middle">
+        <g><circle cx="577" cy="45" r="9" fill="#a81e1e" stroke="#fff" stroke-width="1.5"/><text x="577" y="48.5" fill="#fff">1</text></g>
+        <g><circle cx="803" cy="75" r="9" fill="#a81e1e" stroke="#fff" stroke-width="1.5"/><text x="803" y="78.5" fill="#fff">2</text></g>
+        <g><circle cx="631" cy="64" r="9" fill="#a81e1e" stroke="#fff" stroke-width="1.5"/><text x="631" y="67.5" fill="#fff">3</text></g>
+        <g><circle cx="213" cy="51" r="9" fill="#a81e1e" stroke="#fff" stroke-width="1.5"/><text x="213" y="54.5" fill="#fff">4</text></g>
+        <g><circle cx="541" cy="93" r="9" fill="#a81e1e" stroke="#fff" stroke-width="1.5"/><text x="541" y="96.5" fill="#fff">5</text></g>
+        <g><circle cx="765" cy="42" r="9" fill="#a81e1e" stroke="#fff" stroke-width="1.5"/><text x="765" y="45.5" fill="#fff">6</text></g>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<div class="grid">
+  <!-- 1 Kerch Bridge -->
+  <div class="card">
+    <svg class="art" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bridge with a broken span over water">
+      <rect x="0" y="0" width="300" height="60" fill="#e8eef2"/>
+      <rect x="0" y="44" width="300" height="16" fill="#7fa8c9"/>
+      <path d="M0,47 Q20,44 40,47 T80,47 T120,47 T160,47 T200,47 T240,47 T280,47 T300,47" stroke="#bcd3e4" stroke-width="1.5" fill="none"/>
+      <rect x="40" y="10" width="6" height="26" fill="#4a4a4a"/>
+      <rect x="254" y="10" width="6" height="26" fill="#4a4a4a"/>
+      <line x1="43" y1="12" x2="12" y2="30" stroke="#6a6a6a" stroke-width="1.5"/>
+      <line x1="43" y1="12" x2="118" y2="30" stroke="#6a6a6a" stroke-width="1.5"/>
+      <line x1="257" y1="12" x2="182" y2="30" stroke="#6a6a6a" stroke-width="1.5"/>
+      <line x1="257" y1="12" x2="288" y2="30" stroke="#6a6a6a" stroke-width="1.5"/>
+      <rect x="10" y="30" width="110" height="6" fill="#4a4a4a"/>
+      <rect x="180" y="30" width="110" height="6" fill="#4a4a4a"/>
+      <rect x="132" y="38" width="42" height="6" fill="#4a4a4a" transform="rotate(24 153 41)"/>
+      <circle cx="140" cy="18" r="8" fill="#9aa0a6" opacity="0.85"/>
+      <circle cx="155" cy="11" r="10" fill="#9aa0a6" opacity="0.85"/>
+      <circle cx="168" cy="18" r="7" fill="#9aa0a6" opacity="0.85"/>
+      <path d="M150,20 L153,26 L159,26 L154,30 L156,36 L150,32 L144,36 L146,30 L141,26 L147,26 Z" fill="#e07b28"/>
+    </svg>
+    <div class="kick"><span class="n">1</span>EUROPE &middot; WAR</div>
+    <h2>Overnight Strike Drops a Span of the Crimea Bridge</h2>
+    <p>Kyiv calls it stage seven of a weeks-long campaign. Moscow hit back at two bridges over the Dnipro in Kyiv; the road link is cut, the rail arch damaged.</p>
+  </div>
+
+  <!-- 2 Trump in Manila -->
+  <div class="card">
+    <svg class="art" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Airplane over a city skyline">
+      <rect x="0" y="0" width="300" height="60" fill="#dceaf5"/>
+      <circle cx="262" cy="13" r="9" fill="#f2d06b"/>
+      <ellipse cx="52" cy="14" rx="20" ry="6" fill="#ffffff" opacity="0.9"/>
+      <ellipse cx="150" cy="9" rx="24" ry="6" fill="#ffffff" opacity="0.9"/>
+      <g fill="#2f3b4c">
+        <path d="M118,30 Q160,22 208,26 L246,30 L208,34 Q160,38 118,30 Z"/>
+        <path d="M168,28 L192,12 L202,12 L186,28 Z"/>
+        <path d="M122,28 L110,18 L117,17 L130,26 Z"/>
+        <path d="M122,32 L112,40 L119,41 L130,34 Z"/>
+      </g>
+      <g fill="#5b6b7d">
+        <rect x="8" y="38" width="22" height="22"/><rect x="34" y="30" width="18" height="30"/>
+        <rect x="56" y="42" width="26" height="18"/><rect x="86" y="34" width="16" height="26"/>
+        <rect x="106" y="44" width="30" height="16"/><rect x="200" y="40" width="20" height="20"/>
+        <rect x="224" y="32" width="18" height="28"/><rect x="246" y="42" width="26" height="18"/>
+        <rect x="276" y="36" width="16" height="24"/>
+      </g>
+      <rect x="140" y="44" width="56" height="16" fill="#5b6b7d"/>
+      <g fill="#f2d06b">
+        <rect x="14" y="43" width="4" height="4"/><rect x="39" y="35" width="4" height="4"/>
+        <rect x="90" y="39" width="4" height="4"/><rect x="229" y="37" width="4" height="4"/>
+        <rect x="150" y="48" width="4" height="4"/><rect x="165" y="48" width="4" height="4"/>
+      </g>
+    </svg>
+    <div class="kick"><span class="n">2</span>ASIA &middot; DIPLOMACY</div>
+    <h2>Trump Lands in Manila for ASEAN and Quad Talks</h2>
+    <p>He arrived at 17:33 local for the ASEAN-US summit and the first in-person Quad meeting in two years. A three-way session with Xi and Putin is set for Thursday.</p>
+  </div>
+
+  <!-- 3 Gulf tankers -->
+  <div class="card">
+    <svg class="art" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tanker with smoke and fire at sea">
+      <rect x="0" y="0" width="300" height="60" fill="#e8eef2"/>
+      <rect x="0" y="42" width="300" height="18" fill="#7fa8c9"/>
+      <path d="M0,45 Q25,42 50,45 T100,45 T150,45 T200,45 T250,45 T300,45" stroke="#bcd3e4" stroke-width="1.5" fill="none"/>
+      <path d="M0,60 L0,28 L18,28 L26,42 L30,60 Z" fill="#b3a284"/>
+      <path d="M300,60 L300,28 L282,28 L274,42 L270,60 Z" fill="#b3a284"/>
+      <rect x="42" y="34" width="216" height="11" fill="#8a3b2e"/>
+      <path d="M42,34 L30,45 L42,45 Z" fill="#8a3b2e"/>
+      <rect x="212" y="24" width="32" height="10" fill="#e8e4d8"/>
+      <rect x="218" y="18" width="5" height="7" fill="#5a5344"/>
+      <rect x="60" y="29" width="16" height="5" fill="#e8e4d8"/>
+      <circle cx="128" cy="20" r="9" fill="#55595e" opacity="0.9"/>
+      <circle cx="142" cy="13" r="11" fill="#55595e" opacity="0.9"/>
+      <circle cx="158" cy="20" r="8" fill="#55595e" opacity="0.9"/>
+      <path d="M138,34 C134,28 140,24 143,20 C146,24 152,28 148,34 Z" fill="#e07b28"/>
+      <path d="M150,34 C148,29 152,26 154,23 C156,26 159,29 157,34 Z" fill="#f2c230"/>
+    </svg>
+    <div class="kick"><span class="n">3</span>MIDDLE EAST</div>
+    <h2>Iran Says Mines Set Tankers Alight Near Hormuz</h2>
+    <p>Tehran says vessels struck mines near the strait and caught fire; the claim is unverified. Drones aimed at a US radar site in Bahrain were stopped, with no damage.</p>
+  </div>
+
+  <!-- 4 Measles -->
+  <div class="card">
+    <svg class="art" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Virus particles">
+      <rect x="0" y="0" width="300" height="60" fill="#f3e9e2"/>
+      <g stroke="#c0392b" stroke-width="2.5" stroke-linecap="round">
+        <line x1="70" y1="12" x2="70" y2="5"/><line x1="70" y1="48" x2="70" y2="55"/>
+        <line x1="52" y1="30" x2="45" y2="30"/><line x1="88" y1="30" x2="95" y2="30"/>
+        <line x1="57" y1="17" x2="52" y2="12"/><line x1="83" y1="17" x2="88" y2="12"/>
+        <line x1="57" y1="43" x2="52" y2="48"/><line x1="83" y1="43" x2="88" y2="48"/>
+      </g>
+      <circle cx="70" cy="30" r="17" fill="#c0392b"/>
+      <circle cx="64" cy="25" r="4" fill="#e07b6b"/><circle cx="76" cy="35" r="3" fill="#e07b6b"/>
+      <g fill="#c0392b">
+        <circle cx="70" cy="5" r="2.5"/><circle cx="70" cy="55" r="2.5"/>
+        <circle cx="45" cy="30" r="2.5"/><circle cx="95" cy="30" r="2.5"/>
+        <circle cx="52" cy="12" r="2.5"/><circle cx="88" cy="12" r="2.5"/>
+        <circle cx="52" cy="48" r="2.5"/><circle cx="88" cy="48" r="2.5"/>
+      </g>
+      <g stroke="#d4695e" stroke-width="2" stroke-linecap="round">
+        <line x1="150" y1="16" x2="150" y2="10"/><line x1="150" y1="36" x2="150" y2="42"/>
+        <line x1="140" y1="26" x2="134" y2="26"/><line x1="160" y1="26" x2="166" y2="26"/>
+      </g>
+      <circle cx="150" cy="26" r="10" fill="#d4695e"/>
+      <g stroke="#d4695e" stroke-width="2" stroke-linecap="round">
+        <line x1="220" y1="30" x2="220" y2="24"/><line x1="220" y1="50" x2="220" y2="56"/>
+        <line x1="210" y1="40" x2="204" y2="40"/><line x1="230" y1="40" x2="236" y2="40"/>
+      </g>
+      <circle cx="220" cy="40" r="10" fill="#d4695e"/>
+      <circle cx="255" cy="18" r="5" fill="#d4695e" opacity="0.7"/>
+      <circle cx="272" cy="38" r="4" fill="#d4695e" opacity="0.7"/>
+      <circle cx="120" cy="48" r="4" fill="#d4695e" opacity="0.7"/>
+    </svg>
+    <div class="kick"><span class="n">4</span>UNITED STATES &middot; HEALTH</div>
+    <h2>US Loses Measles-Free Status After 26 Years</h2>
+    <p>Health officials confirmed the loss after 5,412 cases this year, the highest since 1991. The ruling comes from the Pan American Health Organization.</p>
+  </div>
+
+  <!-- 5 Nvidia -->
+  <div class="card">
+    <svg class="art" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Computer chip with a rising chart">
+      <rect x="0" y="0" width="300" height="60" fill="#e9eef4"/>
+      <g fill="#22406b">
+        <rect x="24" y="20" width="8" height="4"/><rect x="24" y="30" width="8" height="4"/><rect x="24" y="40" width="8" height="4"/>
+        <rect x="98" y="20" width="8" height="4"/><rect x="98" y="30" width="8" height="4"/><rect x="98" y="40" width="8" height="4"/>
+        <rect x="42" y="4" width="4" height="8"/><rect x="58" y="4" width="4" height="8"/><rect x="74" y="4" width="4" height="8"/>
+        <rect x="42" y="48" width="4" height="8"/><rect x="58" y="48" width="4" height="8"/><rect x="74" y="48" width="4" height="8"/>
+      </g>
+      <rect x="32" y="12" width="66" height="36" rx="3" fill="#22406b"/>
+      <rect x="46" y="22" width="38" height="16" rx="2" fill="#3d6aa5"/>
+      <circle cx="65" cy="30" r="4" fill="#9fc2e8"/>
+      <polyline points="130,48 160,38 182,42 214,22 250,14" fill="none" stroke="#2e7d32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M250,14 L238,15 L248,24 Z" fill="#2e7d32"/>
+      <g fill="#2e7d32" opacity="0.35">
+        <rect x="132" y="48" width="8" height="6"/><rect x="162" y="40" width="8" height="14"/>
+        <rect x="192" y="34" width="8" height="20"/><rect x="222" y="26" width="8" height="28"/>
+      </g>
+      <circle cx="160" cy="38" r="3" fill="#2e7d32"/><circle cx="214" cy="22" r="3" fill="#2e7d32"/>
+    </svg>
+    <div class="kick"><span class="n">5</span>TECHNOLOGY &middot; MARKETS</div>
+    <h2>Nvidia Revenue Doubles in First Report Since Huang Left</h2>
+    <p>Sales reached $115.8bn, up 103%, with $130bn forecast next quarter. It is the chipmaker's first earnings report since Jensen Huang resigned.</p>
+  </div>
+
+  <!-- 6 Ebola -->
+  <div class="card">
+    <svg class="art" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Filament virus with a medical cross">
+      <rect x="0" y="0" width="300" height="60" fill="#f0e9ef"/>
+      <path d="M28,42 C58,22 88,52 118,32 C148,14 178,44 208,28" fill="none" stroke="#7b2d5e" stroke-width="9" stroke-linecap="round"/>
+      <path d="M28,42 C58,22 88,52 118,32 C148,14 178,44 208,28" fill="none" stroke="#9a4a7d" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 7"/>
+      <path d="M60,52 C90,44 120,56 150,48" fill="none" stroke="#7b2d5e" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+      <circle cx="232" cy="18" r="3" fill="#7b2d5e" opacity="0.6"/>
+      <circle cx="246" cy="34" r="2.5" fill="#7b2d5e" opacity="0.6"/>
+      <circle cx="36" cy="16" r="3" fill="#7b2d5e" opacity="0.6"/>
+      <circle cx="272" cy="44" r="15" fill="#ffffff" stroke="#c0392b" stroke-width="1.5"/>
+      <rect x="268" y="36" width="8" height="16" fill="#c0392b"/>
+      <rect x="264" y="40" width="16" height="8" fill="#c0392b"/>
+    </svg>
+    <div class="kick"><span class="n">6</span>AFRICA &middot; HEALTH</div>
+    <h2>Congo Ebola Toll Passes 11,000 Cases</h2>
+    <p>Deaths have reached 5,400, the WHO said, and Africa CDC warns the outbreak is still out of control.</p>
+  </div>
+</div>
+
+<div class="also">
+  <div class="also-head">
+    <h3>ALSO ON TUESDAY</h3>
+    <div class="fill"></div>
+    <div class="count">18 MORE STORIES</div>
+  </div>
+  <div class="cols">
+    <div class="col">
+      <div class="item"><span class="sq"></span><span>Moscow claims a record 1,441 drones downed overnight</span></div>
+      <div class="item"><span class="sq"></span><span>Houthis advance to within 60-100 km of Aden; Saudis name a new commander</span></div>
+      <div class="item"><span class="sq"></span><span>Deutsche Bank shares fall about 6% after a 15-million-document leak</span></div>
+      <div class="item"><span class="sq"></span><span>Singapore seeks trusted access to AI chips under new US export curbs</span></div>
+      <div class="item"><span class="sq"></span><span>Mongolia's president says he will resign over denied $25m bribery claims</span></div>
+      <div class="item"><span class="sq"></span><span>Mozambique's Mondlane goes on trial on terror charges</span></div>
+      <div class="item"><span class="sq"></span><span>COP31 draft exposes deep splits over fossil fuels and finance</span></div>
+      <div class="item"><span class="sq"></span><span>Russian An-12 crashes in Siberia; ministry says all 19 aboard died</span></div>
+      <div class="item"><span class="sq"></span><span>Japan scrambles jets as suspected Russian planes breach its airspace</span></div>
+    </div>
+    <div class="col">
+      <div class="item"><span class="sq"></span><span>Optimizely attack hits the websites of 178 organisations</span></div>
+      <div class="item"><span class="sq"></span><span>Knesset elects Kahana as speaker, replacing a Netanyahu ally</span></div>
+      <div class="item"><span class="sq"></span><span>Britain sanctions eight Israeli settlement firms</span></div>
+      <div class="item"><span class="sq"></span><span>China and Canada agree tariff relief for C$400m of exports</span></div>
+      <div class="item"><span class="sq"></span><span>US air travel largely recovers after the record ground stop</span></div>
+      <div class="item"><span class="sq"></span><span>Estonia to close its border with Russia from December</span></div>
+      <div class="item"><span class="sq"></span><span>UN talks on lethal autonomous weapons open in Geneva; 128 states attend</span></div>
+      <div class="item"><span class="sq"></span><span>Bus plunges into a ravine in Uttarakhand; at least nine dead</span></div>
+      <div class="item"><span class="sq"></span><span>Australia beat New Zealand 32-12 to win the Rugby League World Cup</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  Sources: Reuters, AP, BBC, Al Jazeera, AFP, UN News and WHO, as reported on 17 November 2026.
+</div>
+
+</body>
+</html>
